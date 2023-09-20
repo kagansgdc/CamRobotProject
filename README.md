@@ -1,3 +1,4 @@
+# This project is a general IoT application.
 # This project includes a dynamic Windowsform that controls motors with ESP8266mod, streams with ESP32cam, and communicates with an MQTT broker.
 
 #Attributes :
