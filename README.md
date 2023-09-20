@@ -2,10 +2,10 @@
 
 Attributes :
 "Motor control with ESP8266mod"
-"Streaming with ESP32cam"
-"Communication with an MQTT broker"
-"User interface with the Accord library"
---- How To
+-"Streaming with ESP32cam"
+-"Communication with an MQTT broker"
+-"User interface with the Accord library"
+--- How To Install ---
 "Install Arduino IDE"
 "Install esp32cam,esp8266mod and MQTT library on Arduino."
 "Install MQTT.Net and Accord on VS."
