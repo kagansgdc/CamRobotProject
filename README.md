@@ -1,7 +1,7 @@
 # This project includes a dynamic Windowsform that controls motors with ESP8266mod, streams with ESP32cam, and communicates with an MQTT broker.
 
-Attributes :
-"Motor control with ESP8266mod"
+#Attributes :
+#"Motor control with ESP8266mod"
 -"Streaming with ESP32cam"
 -"Communication with an MQTT broker"
 -"User interface with the Accord library"
