@@ -373,7 +373,7 @@ namespace SampleApp
             string topic = e.ApplicationMessage.Topic;
             string payload = Encoding.UTF8.GetString(e.ApplicationMessage.Payload);
             string[] spl = topic.Split('/');
-            if (spl[2] == "IP")
+            if (spl[2] == "IP" && spl[1]=="cam")
             {
                 Console.WriteLine(payload);
                 string IP = payload;

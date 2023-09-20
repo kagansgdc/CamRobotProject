@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAMROBO", "Video\Video Player\CAMROBO.csproj", "{B31C0650-991B-4B28-9864-AE80C1785A3F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAMROBO", "CAMROBO\CamRoboProject\CAMROBO.csproj", "{B31C0650-991B-4B28-9864-AE80C1785A3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
