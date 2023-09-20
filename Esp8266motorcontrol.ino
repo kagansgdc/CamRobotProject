@@ -12,7 +12,6 @@ const int D4 = 2;
 WiFiClient wificlient;
 MQTTClient client;
 
-
 void connect() {
   Serial.print("checking");
   while (WiFi.status() != WL_CONNECTED) {
@@ -27,7 +26,6 @@ void connect() {
     client.publish("robot/device1/status","Connected",true,0);
   }
 }
-
 
 void reconnect(){
   while(!client.connected()){
@@ -72,7 +70,6 @@ void messageReceived(String &topic, String &payload) {
     digitalWrite(D2,LOW);
     digitalWrite(D3,HIGH);
 
-
   }
   else{
     digitalWrite(D1,LOW);
@@ -81,10 +78,6 @@ void messageReceived(String &topic, String &payload) {
     digitalWrite(D4,LOW);
 
   }
-  // Note: Do not use the client in the callback to publish, subscribe or
-  // unsubscribe as it may cause deadlocks when other things arrive while
-  // sending and receiving acknowledgments. Instead, change a global variable,
-  // or push to a queue and handle it in the loop after calling `client.loop()`.
 }
 
 void setup() {
@@ -98,10 +91,6 @@ void setup() {
   digitalWrite(D2,LOW);
   digitalWrite(D3,LOW);
   digitalWrite(D4,LOW);
-
-
-  // Note: Local domain names (e.g. "Computer.local" on OSX) are not supported
-  // by Arduino. You need to set the IP address directly.
   client.begin("broker.kerembilgicer.com",1883, wificlient);
   client.onMessage(messageReceived);
   client.setWill("robot/device1/status","Disconnected",true,0);
@@ -111,7 +100,7 @@ void setup() {
 
 void loop() {
   client.loop();
-  delay(10);  // <- fixes some issues with WiFi stability
+  delay(10);  //WiFi stability
 
   if (!client.connected()) {
     reconnect();
